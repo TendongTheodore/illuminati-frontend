@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+    <section class="join-section">
+        <div class="form-container fade-slide">
+            <h1>ILLUMINATI RECRUITMENT FORM</h1>
+            <p class="subtitle"><br>Only those who are fully prepared to walk through the illuminati ladder should attempt filling this form.</p>
+
+            <form id="recruitForm" enctype="multipart/form-data" method="POST" action="http://localhost:5000/submit">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" required>
+                        <option value="">Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="maritalStatus">Marital Status</label>
+                    <select name="maritalStatus" id="maritalStatus" required>
+                        <option value="">Select</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Divorced</option>
+                        <option>Widowed</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" name="occupation" id="occupation" required>
+                </div>
+
+                 <div class="form-group">
+                    <label for="income">Monthly Income</label>
+                    <input type="text" name="income" id="income" required>
+                </div>
+
+                 <div class="form-group">
+                    <label for="education">Level of Education</label>
+                    <input type="education=" name="education" id="education" required>
+                </div>
+
+                 <div class="form-group">
+                    <label for="idCard">Copy of ID Card</label>
+                    <input type="file" name="idCard" id="idCard" accept="image/*,application/pdf" required>
+                </div>
+
+                 <div class="form-group">
+                    <label>Can you keep secrets ?</label>
+                    <select name="keepSecrets" required>
+                        <option value="">Select</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                        
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Are you ready to join the brotherhood?</label>
+                    <select name="readyToJoin" required>
+                        <option value="">Select</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                        
+                    </select>
+                </div>
+
+                 <div class="form-group">
+                    <label for="reason">Why Do You Want to Join?</label>
+                    <textarea name="reason" id="reason" rows="5" required></textarea>
+                </div>
+
+                 <div class="form-group">
+                    <label for="photo">Upload Your Photo</label>
+                    <input type="file" name="photo" id="photo" required>
+                </div>
+
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
